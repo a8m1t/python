@@ -2,7 +2,7 @@
 person = {"name": "Alice", "age": 25, "city": "Kathmandu"}
 
 # 2. Access the value of a given key in a dictionary
-print(person["name"])  # Output: Alice
+print(person["name"])  
 
 # 3. Add a new key-value pair to an existing dictionary
 person["country"] = "Nepal"
@@ -14,10 +14,9 @@ person["age"] = 26
 del person["city"]
 
 # 6. Remove a key-value pair using the .pop() method
-removed_value = person.pop("country")  # Returns "Nepal"
-
+removed_value = person.pop("country")  
 # 7. Use .get() to safely access a value for a key that may not exist
-value = person.get("hobby", "Not Found")  # Returns "Not Found" if key doesn't exist
+value = person.get("hobby", "Not Found")  
 
 # 8. Check if a key exists in a dictionary
 if "name" in person:
@@ -43,12 +42,12 @@ print(students["student2"]["name"])  # Output: Sara
 # 13. Merge two dictionaries using .update()
 dict1 = {"a": 1, "b": 2}
 dict2 = {"b": 3, "c": 4}
-dict1.update(dict2)  # dict1 becomes {"a": 1, "b": 3, "c": 4}
+dict1.update(dict2)  
 
 # 14. Create a dictionary from two lists: one for keys, one for values
 keys = ["name", "age", "city"]
 values = ["Bob", 30, "Lalitpur"]
-combined = dict(zip(keys, values))  # {'name': 'Bob', 'age': 30, 'city': 'Lalitpur'}
+combined = dict(zip(keys, values))  
 
 # 15. Write a dictionary comprehension to create a dictionary of squares of numbers from 1 to 5
-squares = {x: x**2 for x in range(1, 6)}  # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+squares = {x: x**2 for x in range(1, 6)} 
